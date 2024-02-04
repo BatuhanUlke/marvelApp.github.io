@@ -5,7 +5,7 @@ function InfoPage() {
     const {id}=useParams();
     const [items, setItems] = useState()
     const fetch=async()=>{
-       const response=await axios(`http://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=e6d1499355872cf43ec216e18ee71830&hash=65dea527c78bcc3f5c6d00c378ea71dd`)
+       const response=await axios(`http://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=a67c0e577b747b73ec70eb5c6cf6600a`)
        setItems(response.data.data.results[0])
     }
     fetch();
@@ -18,7 +18,8 @@ function InfoPage() {
             <img src={`${items.thumbnail.path}.${items.thumbnail.extension}`} alt="" />
             </div>
             <div className="left-box">
-                <h1>{items.name}</h1>
+              <div className='left'> 
+              <h1>{items.name}</h1>
                 <h3>{items.description}</h3>
                 <h4>Comics</h4>
                <ul>
@@ -57,6 +58,9 @@ function InfoPage() {
                    
                 }
                </ul>
+              
+              </div>
+                
             </div>
         </div>
     )
