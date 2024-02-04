@@ -10,7 +10,7 @@ const hash='65dea527c78bcc3f5c6d00c378ea71dd'
 
 function Characters() {
   const [items, setItems] = useState([])
-  // const [loading, setLoading] = useState(true)
+  
   const [query, setQuery] = useState('')
  
   useEffect(()=>{
@@ -19,12 +19,12 @@ function Characters() {
         const result=await axios(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=e6d1499355872cf43ec216e18ee71830&hash=${hash}`)
         // console.log(result.data.data.results);
         setItems(result.data.data.results);
-        // setLoading(false);
+        
       }else{
         const result=await axios(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${query}&ts=1&apikey=e6d1499355872cf43ec216e18ee71830&hash=${hash}`)
       //  console.log(result.data.data.results);
        setItems(result.data.data.results);
-      //  setLoading(false);
+      
       }
        
     }
