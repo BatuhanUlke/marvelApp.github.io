@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+
+  
+body{
+  background:url('./images/homewall.jpg') ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+header {
+  height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header img {
+  width: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.search {
+  height: 100px;
+}
+
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  
+}
+
+.card{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap: 20px;
+align-items: stretch;
+}
+.card > img{
+max-width: 100%;
+}
+.title{
+padding: 0 20px 20px;
+}
+.box-content{
+  width: 100%;
+  margin: 0  auto;
+  height: 600px;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url('./images/marvelbg.jpg');
   color: white;
+  font-size: 1.3rem;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.App-link {
-  color: #61dafb;
+.right-box{
+  flex-basis: 20%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-box{
+  flex-basis: 50%;
+}
+.box-content img{
+  width: 300px;
+  height: 400px;
+  border:1px solid white;
+  box-shadow: 0 5px 5px 5px rgba(255,255,255,0.2);
+  
+  transition: 0.5s;
+}
+.box-content img:hover{
+  transform: rotate(0deg);
 }
