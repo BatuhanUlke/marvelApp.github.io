@@ -14,9 +14,11 @@ let navigate=useNavigate();
                     <div className="title">
                       <h3>{item.name}</h3>
                     </div>
+                    
                   </div>
                 )
             })
+            
         ):""
     }
     </>

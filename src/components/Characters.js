@@ -13,11 +13,13 @@ function Characters() {
   const [items, setItems] = useState([])
   
   const [query, setQuery] = useState('')
+
+  
  
   useEffect(()=>{
     const fetch=async()=>{
       if(query===''){
-        const result=await axios.get(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=${hash}`)
+        const result=await axios.get(`https://gateway.marvel.com/v1/public/characters?&ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=${hash}&limit=30`)
         // console.log(result.data.data.results);
         setItems(result.data.data.results);
         
@@ -31,6 +33,7 @@ function Characters() {
     }
     fetch();
   },[query])
+
   
   return ( 
   <div className='container'>
@@ -41,7 +44,10 @@ function Characters() {
     <Search search={(q)=>setQuery(q)}/>
     <div className='content'>
     {
-      (!items)? <h1>Loading...</h1>:<CharacterTables items={items} />
+      (!items)? <h1>Loading...</h1>:
+      <CharacterTables items={items} />
+      
+
     }
     </div>
     
