@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Routes>
+      <Routes basename="/marvelApp.github.io">
         
         <Route path='/' element={<Characters/>} />
         <Route path='/:id' element={<InfoPage/>} />
