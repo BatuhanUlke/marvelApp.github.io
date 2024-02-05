@@ -6,12 +6,12 @@ function InfoPage() {
     const [items, setItems] = useState()
     
     const fetch=async()=>{
-       const response=await axios.get(`https://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=a67c0e577b747b73ec70eb5c6cf6600a`)
+       const response=await axios.get(`https://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=e6d1499355872cf43ec216e18ee71830&hash=65dea527c78bcc3f5c6d00c378ea71dd`)
        setItems(response.data.data.results[0])
        
     }
     fetch();
-  
+    
   return (
     <>
   {

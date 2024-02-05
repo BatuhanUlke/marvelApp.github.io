@@ -3,6 +3,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 const CharacterTables = ({items}) => {
 let navigate=useNavigate();
+
   return(
     <>
      {
