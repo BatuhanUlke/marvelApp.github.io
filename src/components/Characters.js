@@ -17,12 +17,12 @@ function Characters() {
   useEffect(()=>{
     const fetch=async()=>{
       if(query===''){
-        const result=await axios(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=${hash}`)
+        const result=await axios(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=${hash}`)
         // console.log(result.data.data.results);
         setItems(result.data.data.results);
         
       }else{
-        const result=await axios(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${query}&ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=${hash}`)
+        const result=await axios(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${query}&ts=1&apikey=72cc9b14584490fa249bc0efb7d5625e&hash=${hash}`)
       //  console.log(result.data.data.results);
        setItems(result.data.data.results);
       
