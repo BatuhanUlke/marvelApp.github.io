@@ -1,5 +1,5 @@
 {
-  "homepage":" https://batuhanulke.github.io/marvelApp.github.io",
+  "homepage": " https://batuhanulke.github.io/marvelApp.github.io",
   "name": "marvelapi",
   "version": "0.1.0",
   "private": true,
@@ -10,16 +10,16 @@
     "axios": "^1.6.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-paginate": "^8.2.0",
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
     "typedoc": "^0.11.1",
-    
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

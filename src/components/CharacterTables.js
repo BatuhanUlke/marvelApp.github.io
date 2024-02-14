@@ -1,9 +1,12 @@
 import React from 'react'
 // import CharacterItem from './CharacterItem'
 import { useNavigate } from 'react-router-dom'
-const CharacterTables = ({items}) => {
-let navigate=useNavigate();
 
+const CharacterTables = ({items,loading}) => {
+let navigate=useNavigate();
+if(loading){
+  return <h2 style={{marginTop:"200px",color:"blue"}}>Loading...</h2>
+}
   return(
     <>
      {
