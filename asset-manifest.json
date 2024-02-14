@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/marvelApp.github.io/static/css/main.6a60e14c.css",
-    "main.js": "/marvelApp.github.io/static/js/main.4fe2be2a.js",
+    "main.css": "/marvelApp.github.io/static/css/main.f3a926da.css",
+    "main.js": "/marvelApp.github.io/static/js/main.ae17da5f.js",
     "static/js/592.83240672.chunk.js": "/marvelApp.github.io/static/js/592.83240672.chunk.js",
     "static/media/homewall.jpg": "/marvelApp.github.io/static/media/homewall.fa2f7dec68d0b909ab3e.jpg",
     "index.html": "/marvelApp.github.io/index.html",
-    "main.6a60e14c.css.map": "/marvelApp.github.io/static/css/main.6a60e14c.css.map",
-    "main.4fe2be2a.js.map": "/marvelApp.github.io/static/js/main.4fe2be2a.js.map",
+    "main.f3a926da.css.map": "/marvelApp.github.io/static/css/main.f3a926da.css.map",
+    "main.ae17da5f.js.map": "/marvelApp.github.io/static/js/main.ae17da5f.js.map",
     "592.83240672.chunk.js.map": "/marvelApp.github.io/static/js/592.83240672.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a60e14c.css",
-    "static/js/main.4fe2be2a.js"
+    "static/css/main.f3a926da.css",
+    "static/js/main.ae17da5f.js"
   ]
 }
