@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
-// import noName from '../images/noName.jpg'
+import noName from '../images/noName.png'
 function InfoPage() {
     const {id}=useParams();
     const [items, setItems] = useState()
@@ -19,7 +19,10 @@ function InfoPage() {
     (!items)?"":(
         <div className="box-content">
             <div className="right-box">
-            <img src={`${items.thumbnail.path}.${items.thumbnail.extension}` } alt="" />
+              
+            <img src={items.thumbnail && items.thumbnail.path ===  "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" ? noName : `${items.thumbnail.path}.${items.thumbnail.extension}`} alt="" />
+
+              
             </div>
             <div className="left-box">
               <div className='left'> 
