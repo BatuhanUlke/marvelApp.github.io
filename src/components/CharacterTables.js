@@ -5,7 +5,7 @@ import noName from '../images/noName.png';
 const CharacterTables = ({items,loading}) => {
 let navigate=useNavigate();
 if(loading){
-  return <h2 style={{marginTop:"200px",color:"blue"}}>Loading...</h2>
+  return  <h2 className='loader'></h2>
 }
   return(
     <>
@@ -33,11 +33,3 @@ if(loading){
 export default CharacterTables
 
 
-// return loading ? <h1>Loading...</h1> :
-// <section className='contents'>
-//     {
-//       items.map(item=>(
-//           <CharacterItem key={item.id} item={item}/>
-//       ))
-//     }
-// </section>

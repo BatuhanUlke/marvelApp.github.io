@@ -16,13 +16,16 @@ function Characters() {
   const [query, setQuery] = useState('')
   const [loading, setLoading] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
+ 
   const [postPerPage] = useState(30)
  
-
+ 
   
  
   useEffect(()=>{
+    
     const fetch=async()=>{
+      setLoading(true);
       try{
         let allCharacters = [];
         let offset = 0;
@@ -40,6 +43,7 @@ function Characters() {
        setLoading(false);
       }catch(error){
         console.error('Error fetching characters:',error)
+        setLoading(false);
       }
       
       
